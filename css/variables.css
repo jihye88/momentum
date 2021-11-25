@@ -1,0 +1,11 @@
+:root {
+  --font-size-large: 80px;
+  --font-size-medium: 40px;
+  --font-size-small: 20px;
+  --font-size-xsmall: 14px;
+  --white: #ffffff;
+  --pink: #f834bd;
+  --violet: rgb(147, 123, 255);
+  --yellow: rgb(252, 239, 122);
+  --light-grey: #dbdbdb;
+}

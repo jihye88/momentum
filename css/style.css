@@ -1,3 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import 'variables.css';
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
 .hidden {
-  display: none;
+  display: none !important;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* ---------container_left */
+.container_left {
+  background-color: var(--violet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  position: relative;
+  transition: width 0.5s linear;
+}
+#weather {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: var(--font-size-xsmall);
+}
+.player {
+  width: 800px;
+  height: 450px;
+}
+#clock {
+  color: var(--white);
+  font-size: var(--font-size-large);
+}
+#greeting {
+  color: var(--pink);
+  font-size: var(--font-size-medium);
+  margin: 40px 20px;
+}
+.todo-form__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--pink);
+  height: 30px;
+  width: 400px;
+  text-align: center;
+}
+/* ---------container_right */
+.container_right {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  position: relative;
+  transition: width 0.5s linear;
+}
+#stranger {
+  margin: 20px 30px;
+  color: var(--white);
+  font-size: var(--font-size-large);
+}
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 100px;
+}
+.login-form__input {
+  border: none;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 55%;
+  text-align: center;
+  background: transparent;
+}
+#login-form ::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: var(--font-size-small);
+}
+.login-form__btn {
+  height: 50px;
+  width: 30%;
+  background-color: var(--yellow);
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+}
+.login-form__btn:hover {
+  cursor: pointer;
+}
+
+#quote {
+  font-size: var(--font-size-xsmall);
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 15px;
+}
+.wide {
+  width: 60%;
+  background-color: var(--violet);
+}
+.narrow {
+  width: 40%;
+  background-color: var(--yellow);
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  height: 100%;
+  width: 100%;
+  column-gap: 10px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0;
+  margin: 20px;
+}
+li {
+  width: 180px;
+  height: 160px;
+  background-color: rgb(131, 230, 255);
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+li span {
+  padding: 10px;
+  width: ;
+  font-family: 'Indie Flower', cursive;
+}
+li button {
+  width: 100%;
 }
