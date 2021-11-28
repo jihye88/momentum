@@ -35,6 +35,7 @@ function classList() {
   containerLeft.classList.add('narrow');
   stranger.classList.add(HIDDEN_CLASSNAME);
   player.classList.add(HIDDEN_CLASSNAME);
+  playerB.classList.remove(HIDDEN_CLASSNAME);
 }
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
