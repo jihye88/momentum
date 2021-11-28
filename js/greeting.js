@@ -3,6 +3,7 @@ const loginInput = document.querySelector('.login-form__input');
 const greeting = document.querySelector('#greeting');
 const stranger = document.querySelector('#stranger');
 const player = document.querySelector('.player');
+const playerB = document.querySelector('.playerB');
 const todoForm = document.getElementById('todo-form');
 const containerRight = document.querySelector('.container_right');
 const containerLeft = document.querySelector('.container_left');
@@ -18,6 +19,7 @@ function onLoginSubmit(event) {
   todoForm.classList.remove(HIDDEN_CLASSNAME);
   containerRight.classList.add('wide');
   containerLeft.classList.add('narrow');
+  playerB.classList.remove(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   paintGreeting(username);

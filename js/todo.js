@@ -21,7 +21,7 @@ function paintToDo(newToDo) {
   const li = document.createElement('li');
   li.id = newToDo.id;
   const button = document.createElement('button');
-  button.innerHTML = '<i class="fas fa-trash-alt"></i>';
+  button.innerHTML = '<i class="far fa-trash-alt"></i>';
   const span = document.createElement('span');
   span.innerText = newToDo.text;
   button.addEventListener('click', deleteToDo);
@@ -52,5 +52,3 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
-
-function 
